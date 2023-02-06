@@ -1,0 +1,135 @@
+<!-- Some of the largest email service providers and testing services recomment XHTML1.0 Transitional -->
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <!-- web browser compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- language setting: UTF-8 or standard character set -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- light or dark mode set -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <!-- deactivate phone number auto link -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Email Template</title>
+    <style type="text/css">
+      /* refarence
+        https://www.campaignmonitor.com/css/selectors/universal/
+        https://www.campaignmonitor.com/blog/email-marketing/css3-support-in-email-clients/
+        https://medium.com/dev-channel/what-does-dark-modes-supported-color-schemes-actually-do-69c2eacdfa1d
+       */
+      :root {
+        /* Light and Dark Mode */
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      /* https://www.htmlemailcheck.com/knowledge-base/recommended-externalclass-css-fix-outlook-com/ */
+      /* Center your email in Outlook.com */
+      .ExternalClass {
+        width: 100%;
+      }
+      #outlook a {
+        padding: 0;
+      } /* Force Outlook to provide a "view in browser" message */
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      } /* Prevent WebKit and Windows mobile changing default text sizes */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      } /* Remove spacing between tables in Outlook 2007 and up */
+      /* remove gaps between tables */
+      table {
+        border-collapse: collapse;
+      }
+      a,
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #00788a;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h2,
+      h2 a,
+      h2 a:visited,
+      h3,
+      h3 a,
+      h3 a:visited,
+      h4,
+      h5,
+      h6,
+      .t_cht {
+        color: #000 !important;
+      }
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td {
+        line-height: 100%;
+      }
+
+      /* in default many emails display a blue or black border around linked images */
+      img {
+        display: block;
+      }
+      a img {
+        border: 0;
+      }
+
+      /* enable phone number link */
+      a[x-apple-data-detectors='true'] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      /* Galaxy Fold */
+      @media only screen and (max-width: 280px) {
+      }
+      /* iPhone SE */
+      @media only screen and (max-width: 375px) {
+      }
+      /* iPhone XR */
+      @media only screen and (max-width: 414px) {
+      }
+      @media only screen and (max-width: 620px) {
+      }
+
+      /* iPhone X  */
+      @media screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+        /* Insert styles here */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" alt="Your alt text" title="HTML Email Check" target="_blank">
+      <img
+        src="http://www.emailhtmlcheck.com/logo.png"
+        alt="HTML Email Check"
+        width="x"
+        height="y"
+        vspace="0"
+        hspace="0"
+      />
+    </a>
+    <table border="0" cellpadding="0" cellspacing="0"></table>
+  </body>
+</html>
